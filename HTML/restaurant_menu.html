@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: #f3e9dc;
+            }
+            #header-img{
+                width: 100%;
+                height:400px;
+                object-fit: fill;
+            }
+            img{
+                width:300px;
+                border: 1px solid;
+            }
+        </style>
+        <title>The Origin Resto</title>
+    </head>
+    <body>
+        <header>
+            <img src="images/logo_resto.png" alt="logo the origin resto" id="header-img">
+            <h1>The Origin Resto</h1>
+            <nav>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#order-form">Order Form</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="menu">
+                <h2>Menu</h2>
+
+                <article>
+                    <h3>Spaghetti Carbonara</h3>
+                    <img src="./images/spaghetti-carbonara.jpg" alt="Spaghetti Carbonara" >
+                    <p>Pâtes italiennes avec pancetta, œufs, parmesan et poivre noir.   <i>12.50 $</i></p>
+                </article>
+                <br>
+                <hr>
+
+                <article>
+                    <h3>Poulet Tikka masala</h3>
+                    <img src="images/poulet-tikka-masala.webp" alt="Poulet Tikka Masala" >
+                    <p>Spicy Indian dish made from grilled chicken and creamy sauce.   <i>13.90 $</i></p>
+                </article>
+                <br>
+                <hr>
+
+                <article>
+                    <h3>Sushi Maki Mix</h3>
+                    <img src="images/Maki-sushi-rolls.avif" alt="Sushi Maki Mix" >
+                    <p>Assortment of salmon, lawyer, cucumber and tuna.   <i>15$</i></p>
+                </article>
+                <br>
+                <hr>
+
+                <article>
+                    <h3>Tajine d'Agneau aux Pruneaux</h3>
+                    <img src="images/tajine-d-agneau-aux-pruneaux.png" alt="Tajine d'Agneau aux Pruneaux" >
+                    <p>Moroccan specialty based on lamb, prunes, almonds and sweet spices.   <i>14.50$</i></p>
+                </article>
+                <br>
+                <hr>
+
+                <article>
+                    <h3>Bœuf Bourguignon</h3>
+                    <img src="images/Boeuf-Bourguignon-Traditionnel-Une-Recette-Authentique-et-Gourmande.jpg" alt="Bœuf Bourguignon" >
+                    <p>Traditional French dish of beef simmered with red wine with vegetables.     <i>16$</i></p>
+                </article>
+            </section>
+
+            <section id="order-form">
+                <h2>Place Your Order</h2>
+                <form method="" action="">
+                    <label for="menu-item">Choose your menu item</label>
+                    <input type="number" min="0" max="5" id="menu-item" required>
+                    <br><br>
+                    
+                    <p><strong>Add-ons (optional):</strong></p>
+                    <label><input type="checkbox" name="addons" value="pain-ail"> Garlic bread</label><br>
+                    <label><input type="checkbox" name="addons" value="fromage"> Grated cheese</label><br>
+                    <label><input type="checkbox" name="addons" value="riz"> Riz Basmati</label><br>
+                    <label><input type="checkbox" name="addons" value="boisson"> Coco-Cola</label><br>
+                    <label><input type="checkbox" name="addons" value="boisson"> Pepsi</label><br>
+                    <label><input type="checkbox" name="addons" value="boisson"> Bissap</label><br>
+                    <label><input type="checkbox" name="addons" value="dessert"> Daily dessert</label><br>
+                    <br>
+
+                    <p><strong>Do you have any allergies?</strong></p>
+                    <input type="radio" name="allergy" value="none" required> None<br>
+                    <input type="radio" name="allergy" value="peanuts"> Peanuts<br>
+                    <input type="radio" name="allergy" value="eggs"> Eggs<br>
+                    <input type="radio" name="allergy" value="dairy">Dairy products<br>
+                    <input type="radio" name="allergy" value="gluten"> gluten<br>
+                    <input type="radio" name="allergy" value="fish"> Fish / seafood<br>
+                    <br>
+
+                    <label for="special-request">Special Request: </label>
+                    <textarea id="special-request" placeholder="Ex Extra spicies..." cols="42" rows="6"  maxlength="320"></textarea>
+                    
+                    <br><br>
+                    <input type="submit" value="Go To Checkout">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p><em>Made with love by</em> <strong><a href="https://www.codedex.io/@LaudeDignus">@LaudeDignus</a></strong></p>
+        </footer>
+    </body>
+</html>
